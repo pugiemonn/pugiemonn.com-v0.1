@@ -1,0 +1,13 @@
+.d-ib-all {
+  @extend .d-ib;
+  *display: inline;
+  *zoom: 1;
+}
+
+%ellipsis {
+  @extend .whs-nw;
+  @extend .ov-h;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis; /* Opera9,10対応 */
+  -webkit-text-overflow: ellipsis;
+}
