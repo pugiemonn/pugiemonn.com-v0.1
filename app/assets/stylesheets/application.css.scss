@@ -2,3 +2,109 @@
 @import "variables";
 @import "mixin";
 @import "extend";
+
+/*
+
+スマホ: 320px - 480px
+タブレット : 480 - 768px
+それ以上
+*/
+
+body {
+  font-family: Arial, Verdana, sans-serif;
+  width: 95%;
+  margin: 0 auto;
+}
+
+#header {
+background-color: red;
+}
+
+#footer {
+background-color: green;
+}
+
+#container {
+background-color: white;
+}
+
+#main {
+background-color: orange;
+}
+
+#sub {
+background-color: yellow;
+}
+
+#footerNavLink {
+float: right;
+}
+
+#headerNav {
+ul {
+list-style: none;
+overflow: hidden;
+}
+
+li {
+float: left;
+width: 33%;
+text-align: center;
+}
+}
+
+img {
+max-width: 100%;
+}
+/* スマホ */
+
+#headerNav {
+display: none;
+}
+
+/* タブレット */
+@media all and (min-width: 480px) {
+#footerNavLink {
+display: none;
+} 
+#headerNav {
+display: block;
+}
+#footerNav {
+display: none;
+}
+}
+
+/* PC */
+
+/*
+all: 980px
+sub: 200px
+margin: 15px
+main: 765px
+*/
+@media all and (min-width: 768px) {
+#container {
+overflow: hidden;
+}
+#main {
+float: left;
+width: 78.06%;
+} 
+#sub {
+float: right;
+width: 20.4081633%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
